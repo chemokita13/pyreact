@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Py-react</title>
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    </head>
+    <body>
+        <py-config>
+            [[fetch]]
+            from = 'src/'
+            files = ["app.py"]
+        </py-config>
+        <py-script src="./src/main.py"></py-script>
+        <div id="MainBox">
+            <!-- 
+                Este div será manipulado por pyreact
+            -->
+        </div>
+    </body>
+</html>
